@@ -42,7 +42,7 @@ repository:
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   favicon: "fav.ico"
-  baseurl: https://giswqs.github.io/leafmap-book # The base URL where your book will be hosted.
+  baseurl: https://book.leafmap.org # The base URL where your book will be hosted.
   use_repository_button: true
   use_issues_button: true
   use_edit_page_button: true
@@ -66,12 +66,10 @@ sphinx:
         }
     bibtex_reference_style: author_year
 
-
 # Define the name of the latex output file for PDF builds
 # latex:
 #   latex_documents:
 #     targetname: book.tex
-
 
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
