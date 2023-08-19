@@ -66,7 +66,7 @@ There are a number of text conventions used throughout this book.
 Python code blocks are set as follows:
 
 ```{code-cell}
-import geemap
+import leafmap
 # Create an interactive map
 m = leafmap.Map(center=[40, -100], zoom=4)
 m
