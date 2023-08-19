@@ -4,13 +4,6 @@
 
 ## Usage
 
-### Structure
-
-- `chapters`: The main content of the book lives here, including myst markdown files, images, and notebooks.
-- `code`: Myst markdown files and notebooks that contain code snippets only for public access.
-- `markdown`: Plain markdown files and Restructured text files.
-- `rst`: The Restructured text files for Locate Press.
-
 ### Building the book
 
 If you'd like to develop and/or build the Leafmap and Jupyter: Geospatial Data Science with Python book, you should:
