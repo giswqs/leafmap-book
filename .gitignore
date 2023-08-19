@@ -18,7 +18,6 @@ notebooks/
 md2rst.md
 md2rst.rst
 testing/
-geemap/geemap_v*.py
 .Python
 env/
 build/
