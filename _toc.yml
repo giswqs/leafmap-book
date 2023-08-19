@@ -3,20 +3,25 @@
 
 format: jb-book
 root: index
-chapters:
-  - file: book/markdown
-  - file: book/notebooks
-  - file: book/bibliography
-
-# Or you organize the TOC by parts
-
-# parts:
-#   - caption: Chapters
-#     numbered: true
-#     maxdepth: 2
-#     chapters:
-#       - file: book/markdown
-#       - file: book/notebooks
-#   - caption: Appendices
-#     chapters:
-#       - file: book/bibliography
+parts:
+  - caption: Introduction & Overview
+    chapters:
+      - file: chapters/author
+      - file: chapters/preface
+      - file: chapters/toc
+  - caption: Chapters
+    numbered: true
+    maxdepth: 2
+    chapters:
+      - file: chapters/1_get_started
+      - file: chapters/2_data_viz
+      - file: chapters/3_get_data
+      - file: chapters/4_work_with_data
+      - file: chapters/5_time_series
+      - file: chapters/6_data_analysis
+      - file: chapters/7_deep_learning
+      - file: chapters/8_web_apps
+  - caption: Appendices
+    chapters:
+      - file: chapters/bibliography
+      - file: chapters/issues

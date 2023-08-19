@@ -5,9 +5,9 @@
 
 #######################################################################################
 # Book settings
-title: Geospatial Data Science with Microsoft Planetary Computer and Leafmap # The title of the book. Will be placed in the left navbar.
+title: Geospatial Data Science with Leafmap # The title of the book. Will be placed in the left navbar.
 author: Qiusheng Wu # The author of the book
-copyright: "2022" # Copyright year to be placed in the footer
+copyright: "2023" # Copyright year to be placed in the footer
 logo: logo.png # A path to the book logo
 # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
 exclude_patterns: [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
@@ -17,7 +17,7 @@ only_build_toc_files: true
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: "auto" # Whether to execute notebooks at build time. Must be one of ("auto", "force", "cache", "off")
+  execute_notebooks: "off" # Whether to execute notebooks at build time. Must be one of ("auto", "force", "cache", "off")
   cache: "" # A path to the jupyter cache that will be used to store execution artifacts. Defaults to `_build/.jupyter_cache/`
   exclude_patterns: [] # A list of patterns to *skip* in execution (e.g. a notebook that takes a really long time)
   timeout: 100 # The maximum time (in seconds) each notebook cell is allowed to run.
@@ -41,7 +41,7 @@ repository:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  favicon: "fav.ico"
+  favicon: "favicon.png"
   baseurl: https://book.leafmap.org # The base URL where your book will be hosted.
   use_repository_button: true
   use_issues_button: true
@@ -52,7 +52,7 @@ html:
 
 sphinx:
   config:
-    # html_extra_path: ["CNAME", "robots.txt"]
+    html_extra_path: ["CNAME"]
     html_theme_options:
       use_download_button: true
       repository_url: https://github.com/giswqs/leafmap-book
@@ -73,4 +73,4 @@ sphinx:
 
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
-  - book/references.bib
+  - chapters/references.bib

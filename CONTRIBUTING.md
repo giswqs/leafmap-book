@@ -25,8 +25,8 @@ and "help wanted" is open to whoever wants to implement it.
 
 ## Write Documentation
 
-Geospatial Data Science with Microsoft Planetary Computer and Leafmap could always use more documentation, whether as part of the
-official Geospatial Data Science with Microsoft Planetary Computer and Leafmap docs, in docstrings, or even on the web in blog posts,
+Leafmap and Jupyter: Geospatial Data Science with Python could always use more documentation, whether as part of the
+official Leafmap and Jupyter: Geospatial Data Science with Python docs, in docstrings, or even on the web in blog posts,
 articles, and such.
 
 ## Submit Feedback
@@ -42,7 +42,7 @@ If you are proposing a feature:
 
 ## Get Started
 
-Ready to contribute? Here's how to set up `Geospatial Data Science with Microsoft Planetary Computer and Leafmap` for local development.
+Ready to contribute? Here's how to set up `Leafmap and Jupyter: Geospatial Data Science with Python` for local development.
 
 1. Fork the repo on GitHub.
 2. Clone your fork locally.
@@ -53,4 +53,4 @@ Ready to contribute? Here's how to set up `Geospatial Data Science with Microsof
 
 ## Code of Conduct
 
-Please note that the Geospatial Data Science with Microsoft Planetary Computer and Leafmap project is released with a [Contributor Code of Conduct](CONDUCT.md). By contributing to this project you agree to abide by its terms.
+Please note that the Leafmap and Jupyter: Geospatial Data Science with Python project is released with a [Contributor Code of Conduct](CONDUCT.md). By contributing to this project you agree to abide by its terms.

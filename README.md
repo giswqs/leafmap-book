@@ -1,12 +1,19 @@
-# Geospatial Data Science with Microsoft Planetary Computer and Leafmap
+# Leafmap Book
 
-Geospatial Data Science with Microsoft Planetary Computer and Leafmap
+**Geospatial Data Science with Leafmap**
 
 ## Usage
 
+### Structure
+
+- `chapters`: The main content of the book lives here, including myst markdown files, images, and notebooks.
+- `code`: Myst markdown files and notebooks that contain code snippets only for public access.
+- `markdown`: Plain markdown files and Restructured text files.
+- `rst`: The Restructured text files for Locate Press.
+
 ### Building the book
 
-If you'd like to develop and/or build the Geospatial Data Science with Microsoft Planetary Computer and Leafmap book, you should:
+If you'd like to develop and/or build the Leafmap and Jupyter: Geospatial Data Science with Python book, you should:
 
 1. Clone this repository
 2. Run `pip install -r requirements.txt` (it is recommended you do this within a virtual environment)

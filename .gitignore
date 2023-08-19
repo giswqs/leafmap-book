@@ -8,11 +8,8 @@ _build/html/
 _build/
 .vscode/
 private/
-chapters/*.tif
-chapters/*.csv
-chapters/*.html
-
 .ipynb_checkpoints/
+notebooks/
 
 # C extensions
 *.so
