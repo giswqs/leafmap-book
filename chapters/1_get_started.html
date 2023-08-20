@@ -451,12 +451,20 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geospatial-data-science">1.2. Geospatial data science</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introducing-leafmap">1.3. Introducing leafmap</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-features">1.4. Key features</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">1.5. Installation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#google-colab">1.6. Google Colab</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amazon-sagemaker-studio-lab">1.7. Amazon SageMaker Studio Lab</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#microsoft-planetary-computer">1.8. Microsoft Planetary Computer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">1.9. Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">1.10. References</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">1.5. Installation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-with-conda">1.5.1. Installing with conda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-with-pip">1.5.2. Installing with pip</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-from-source">1.5.3. Installing from source</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#upgrading-leafmap">1.5.4. Upgrading leafmap</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-docker">1.5.5. Using Docker</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-jupyter-notebook">1.6. Creating a Jupyter notebook</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#google-colab">1.7. Google Colab</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amazon-sagemaker-studio-lab">1.8. Amazon SageMaker Studio Lab</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#microsoft-planetary-computer">1.9. Microsoft Planetary Computer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">1.10. Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">1.11. References</a></li>
 </ul>
             </nav>
         </div>
@@ -484,9 +492,71 @@ document.write(`
 </section>
 <section id="installation">
 <h2><span class="section-number">1.5. </span>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">#</a></h2>
+<section id="installing-with-conda">
+<h3><span class="section-number">1.5.1. </span>Installing with conda<a class="headerlink" href="#installing-with-conda" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>gee<span class="w"> </span>python
+conda<span class="w"> </span>activate<span class="w"> </span>gee
+conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>leafmap
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>mamba
+mamba<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>pygis
+</pre></div>
+</div>
+</section>
+<section id="installing-with-pip">
+<h3><span class="section-number">1.5.2. </span>Installing with pip<a class="headerlink" href="#installing-with-pip" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>leafmap
+</pre></div>
+</div>
+</section>
+<section id="installing-from-source">
+<h3><span class="section-number">1.5.3. </span>Installing from source<a class="headerlink" href="#installing-from-source" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/gee-community/leafmap
+<span class="nb">cd</span><span class="w"> </span>leafmap
+pip<span class="w"> </span>install<span class="w"> </span>.
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/gee-community/leafmap
+</pre></div>
+</div>
+</section>
+<section id="upgrading-leafmap">
+<h3><span class="section-number">1.5.4. </span>Upgrading leafmap<a class="headerlink" href="#upgrading-leafmap" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>leafmap
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>update<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>leafmap
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">leafmap</span>
+
+<span class="n">leafmap</span><span class="o">.</span><span class="n">update_package</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="using-docker">
+<h3><span class="section-number">1.5.5. </span>Using Docker<a class="headerlink" href="#using-docker" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>run<span class="w"> </span>-it<span class="w"> </span>-p<span class="w"> </span><span class="m">8888</span>:8888<span class="w"> </span>giswqs/leafmap:latest
+</pre></div>
+</div>
+</section>
+</section>
+<section id="creating-a-jupyter-notebook">
+<h2><span class="section-number">1.6. </span>Creating a Jupyter notebook<a class="headerlink" href="#creating-a-jupyter-notebook" title="Permalink to this heading">#</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>gee
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter<span class="w"> </span>lab
+</pre></div>
+</div>
 </section>
 <section id="google-colab">
-<h2><span class="section-number">1.6. </span>Google Colab<a class="headerlink" href="#google-colab" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.7. </span>Google Colab<a class="headerlink" href="#google-colab" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">leafmap</span>
@@ -504,16 +574,16 @@ document.write(`
 </div>
 </section>
 <section id="amazon-sagemaker-studio-lab">
-<h2><span class="section-number">1.7. </span>Amazon SageMaker Studio Lab<a class="headerlink" href="#amazon-sagemaker-studio-lab" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.8. </span>Amazon SageMaker Studio Lab<a class="headerlink" href="#amazon-sagemaker-studio-lab" title="Permalink to this heading">#</a></h2>
 </section>
 <section id="microsoft-planetary-computer">
-<h2><span class="section-number">1.8. </span>Microsoft Planetary Computer<a class="headerlink" href="#microsoft-planetary-computer" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.9. </span>Microsoft Planetary Computer<a class="headerlink" href="#microsoft-planetary-computer" title="Permalink to this heading">#</a></h2>
 </section>
 <section id="summary">
-<h2><span class="section-number">1.9. </span>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.10. </span>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
 </section>
 <section id="references">
-<h2><span class="section-number">1.10. </span>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.11. </span>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://leafmap.org/notebooks/01_leafmap_intro">https://leafmap.org/notebooks/01_leafmap_intro</a></p></li>
 <li><p><a class="reference external" href="https://leafmap.org/notebooks/02_using_basemaps">https://leafmap.org/notebooks/02_using_basemaps</a></p></li>
@@ -597,12 +667,20 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geospatial-data-science">1.2. Geospatial data science</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introducing-leafmap">1.3. Introducing leafmap</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-features">1.4. Key features</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">1.5. Installation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#google-colab">1.6. Google Colab</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amazon-sagemaker-studio-lab">1.7. Amazon SageMaker Studio Lab</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#microsoft-planetary-computer">1.8. Microsoft Planetary Computer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">1.9. Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">1.10. References</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">1.5. Installation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-with-conda">1.5.1. Installing with conda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-with-pip">1.5.2. Installing with pip</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-from-source">1.5.3. Installing from source</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#upgrading-leafmap">1.5.4. Upgrading leafmap</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-docker">1.5.5. Using Docker</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-jupyter-notebook">1.6. Creating a Jupyter notebook</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#google-colab">1.7. Google Colab</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amazon-sagemaker-studio-lab">1.8. Amazon SageMaker Studio Lab</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#microsoft-planetary-computer">1.9. Microsoft Planetary Computer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">1.10. Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">1.11. References</a></li>
 </ul>
   </nav></div>
 
