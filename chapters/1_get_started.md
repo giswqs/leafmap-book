@@ -15,11 +15,11 @@ kernelspec:
 
 ## Introduction
 
-## Geospatial Data Science
+## Geospatial data science
 
-## Introducing Leafmap
+## Introducing leafmap
 
-## Key Features
+## Key features
 
 ## Installation
 
