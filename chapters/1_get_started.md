@@ -15,9 +15,24 @@ kernelspec:
 
 ## Introduction
 
+## Geospatial Data Science
+
+## Introducing Leafmap
+
+## Key Features
+
 ## Installation
 
 ## Google Colab
+
+```{code-cell} ipython3
+import leafmap
+```
+
+```{code-cell} ipython3
+m = leafmap.Map()
+m
+```
 
 ## Amazon SageMaker Studio Lab
 
