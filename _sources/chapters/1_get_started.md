@@ -45,13 +45,13 @@ pip install leafmap
 ### Installing from source
 
 ```bash
-git clone https://github.com/geo-community/leafmap
+git clone https://github.com/opengeos/leafmap
 cd leafmap
 pip install .
 ```
 
 ```bash
-pip install git+https://github.com/geo-community/leafmap
+pip install git+https://github.com/opengeos/leafmap
 ```
 
 ### Upgrading leafmap
@@ -66,7 +66,6 @@ conda update -c conda-forge leafmap
 
 ```{code-cell} ipython3
 import leafmap
-
 leafmap.update_package()
 ```
 
