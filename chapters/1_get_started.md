@@ -26,13 +26,13 @@ kernelspec:
 ### Installing with conda
 
 ```bash
-conda create -n gee python
-conda activate gee
-conda install -c conda-forge leafmap
+conda create -n geo python
+conda activate geo
+conda install -c conda-forge mamba
+mamba install -c conda-forge leafmap
 ```
 
 ```bash
-conda install -c conda-forge mamba
 mamba install -c conda-forge pygis
 ```
 
@@ -45,13 +45,13 @@ pip install leafmap
 ### Installing from source
 
 ```bash
-git clone https://github.com/gee-community/leafmap
+git clone https://github.com/geo-community/leafmap
 cd leafmap
 pip install .
 ```
 
 ```bash
-pip install git+https://github.com/gee-community/leafmap
+pip install git+https://github.com/geo-community/leafmap
 ```
 
 ### Upgrading leafmap
@@ -79,7 +79,7 @@ docker run -it -p 8888:8888 giswqs/leafmap:latest
 ## Creating a Jupyter notebook
 
 ```bash
-conda activate gee
+conda activate geo
 ```
 
 ```bash
