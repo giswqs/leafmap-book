@@ -494,13 +494,13 @@ document.write(`
 <h2><span class="section-number">1.5. </span>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">#</a></h2>
 <section id="installing-with-conda">
 <h3><span class="section-number">1.5.1. </span>Installing with conda<a class="headerlink" href="#installing-with-conda" title="Permalink to this heading">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>gee<span class="w"> </span>python
-conda<span class="w"> </span>activate<span class="w"> </span>gee
-conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>leafmap
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>geo<span class="w"> </span>python
+conda<span class="w"> </span>activate<span class="w"> </span>geo
+conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>mamba
+mamba<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>leafmap
 </pre></div>
 </div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>mamba
-mamba<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>pygis
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mamba<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>pygis
 </pre></div>
 </div>
 </section>
@@ -512,12 +512,12 @@ mamba<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> <
 </section>
 <section id="installing-from-source">
 <h3><span class="section-number">1.5.3. </span>Installing from source<a class="headerlink" href="#installing-from-source" title="Permalink to this heading">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/gee-community/leafmap
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/geo-community/leafmap
 <span class="nb">cd</span><span class="w"> </span>leafmap
 pip<span class="w"> </span>install<span class="w"> </span>.
 </pre></div>
 </div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/gee-community/leafmap
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/geo-community/leafmap
 </pre></div>
 </div>
 </section>
@@ -548,7 +548,7 @@ pip<span class="w"> </span>install<span class="w"> </span>.
 </section>
 <section id="creating-a-jupyter-notebook">
 <h2><span class="section-number">1.6. </span>Creating a Jupyter notebook<a class="headerlink" href="#creating-a-jupyter-notebook" title="Permalink to this heading">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>gee
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>geo
 </pre></div>
 </div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter<span class="w"> </span>lab
