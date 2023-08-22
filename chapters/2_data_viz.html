@@ -448,8 +448,27 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">2.1. Introduction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">2.2. Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">2.3. References</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-vector-data">2.2. Visualizing vector data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geojson">2.2.1. GeoJSON</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shapefile">2.2.2. Shapefile</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geopackage">2.2.3. GeoPackage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geodataframe">2.2.4. GeoDataFrame</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-tile-layer">2.2.5. Vector tile layer</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-raster-data">2.3. Visualizing raster data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geotiff">2.3.1. GeoTIFF</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cog">2.3.2. COG</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stac">2.3.3. STAC</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legends">2.4. Legends</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#colorbars">2.5. Colorbars</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#labels">2.6. Labels</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#split-maps">2.7. Split maps</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linked-maps">2.8. Linked maps</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">2.9. Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">2.10. References</a></li>
 </ul>
             </nav>
         </div>
@@ -466,18 +485,84 @@ document.write(`
 <nav class="contents local" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#introduction" id="id1">Introduction</a></p></li>
-<li><p><a class="reference internal" href="#summary" id="id2">Summary</a></p></li>
-<li><p><a class="reference internal" href="#references" id="id3">References</a></p></li>
+<li><p><a class="reference internal" href="#visualizing-vector-data" id="id2">Visualizing vector data</a></p>
+<ul>
+<li><p><a class="reference internal" href="#geojson" id="id3">GeoJSON</a></p></li>
+<li><p><a class="reference internal" href="#shapefile" id="id4">Shapefile</a></p></li>
+<li><p><a class="reference internal" href="#geopackage" id="id5">GeoPackage</a></p></li>
+<li><p><a class="reference internal" href="#geodataframe" id="id6">GeoDataFrame</a></p></li>
+<li><p><a class="reference internal" href="#vector-tile-layer" id="id7">Vector tile layer</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#visualizing-raster-data" id="id8">Visualizing raster data</a></p>
+<ul>
+<li><p><a class="reference internal" href="#geotiff" id="id9">GeoTIFF</a></p></li>
+<li><p><a class="reference internal" href="#cog" id="id10">COG</a></p></li>
+<li><p><a class="reference internal" href="#stac" id="id11">STAC</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#legends" id="id12">Legends</a></p></li>
+<li><p><a class="reference internal" href="#colorbars" id="id13">Colorbars</a></p></li>
+<li><p><a class="reference internal" href="#labels" id="id14">Labels</a></p></li>
+<li><p><a class="reference internal" href="#split-maps" id="id15">Split maps</a></p></li>
+<li><p><a class="reference internal" href="#linked-maps" id="id16">Linked maps</a></p></li>
+<li><p><a class="reference internal" href="#summary" id="id17">Summary</a></p></li>
+<li><p><a class="reference internal" href="#references" id="id18">References</a></p></li>
 </ul>
 </nav>
 <section id="introduction">
 <h2><a class="toc-backref" href="#id1" role="doc-backlink"><span class="section-number">2.1. </span>Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
 </section>
+<section id="visualizing-vector-data">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink"><span class="section-number">2.2. </span>Visualizing vector data</a><a class="headerlink" href="#visualizing-vector-data" title="Permalink to this heading">#</a></h2>
+<section id="geojson">
+<h3><a class="toc-backref" href="#id3" role="doc-backlink"><span class="section-number">2.2.1. </span>GeoJSON</a><a class="headerlink" href="#geojson" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="shapefile">
+<h3><a class="toc-backref" href="#id4" role="doc-backlink"><span class="section-number">2.2.2. </span>Shapefile</a><a class="headerlink" href="#shapefile" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="geopackage">
+<h3><a class="toc-backref" href="#id5" role="doc-backlink"><span class="section-number">2.2.3. </span>GeoPackage</a><a class="headerlink" href="#geopackage" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="geodataframe">
+<h3><a class="toc-backref" href="#id6" role="doc-backlink"><span class="section-number">2.2.4. </span>GeoDataFrame</a><a class="headerlink" href="#geodataframe" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="vector-tile-layer">
+<h3><a class="toc-backref" href="#id7" role="doc-backlink"><span class="section-number">2.2.5. </span>Vector tile layer</a><a class="headerlink" href="#vector-tile-layer" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="visualizing-raster-data">
+<h2><a class="toc-backref" href="#id8" role="doc-backlink"><span class="section-number">2.3. </span>Visualizing raster data</a><a class="headerlink" href="#visualizing-raster-data" title="Permalink to this heading">#</a></h2>
+<section id="geotiff">
+<h3><a class="toc-backref" href="#id9" role="doc-backlink"><span class="section-number">2.3.1. </span>GeoTIFF</a><a class="headerlink" href="#geotiff" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="cog">
+<h3><a class="toc-backref" href="#id10" role="doc-backlink"><span class="section-number">2.3.2. </span>COG</a><a class="headerlink" href="#cog" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="stac">
+<h3><a class="toc-backref" href="#id11" role="doc-backlink"><span class="section-number">2.3.3. </span>STAC</a><a class="headerlink" href="#stac" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="legends">
+<h2><a class="toc-backref" href="#id12" role="doc-backlink"><span class="section-number">2.4. </span>Legends</a><a class="headerlink" href="#legends" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="colorbars">
+<h2><a class="toc-backref" href="#id13" role="doc-backlink"><span class="section-number">2.5. </span>Colorbars</a><a class="headerlink" href="#colorbars" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="labels">
+<h2><a class="toc-backref" href="#id14" role="doc-backlink"><span class="section-number">2.6. </span>Labels</a><a class="headerlink" href="#labels" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="split-maps">
+<h2><a class="toc-backref" href="#id15" role="doc-backlink"><span class="section-number">2.7. </span>Split maps</a><a class="headerlink" href="#split-maps" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="linked-maps">
+<h2><a class="toc-backref" href="#id16" role="doc-backlink"><span class="section-number">2.8. </span>Linked maps</a><a class="headerlink" href="#linked-maps" title="Permalink to this heading">#</a></h2>
+</section>
 <section id="summary">
-<h2><a class="toc-backref" href="#id2" role="doc-backlink"><span class="section-number">2.2. </span>Summary</a><a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id17" role="doc-backlink"><span class="section-number">2.9. </span>Summary</a><a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
 </section>
 <section id="references">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink"><span class="section-number">2.3. </span>References</a><a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id18" role="doc-backlink"><span class="section-number">2.10. </span>References</a><a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://leafmap.org/notebooks/27_basemap_gallery">https://leafmap.org/notebooks/27_basemap_gallery</a></p></li>
 <li><p><a class="reference external" href="https://leafmap.org/notebooks/03_cog_stac">https://leafmap.org/notebooks/03_cog_stac</a></p></li>
@@ -491,6 +576,7 @@ document.write(`
 <li><p><a class="reference external" href="https://leafmap.org/notebooks/36_add_labels">https://leafmap.org/notebooks/36_add_labels</a></p></li>
 <li><p><a class="reference external" href="https://leafmap.org/notebooks/59_create_legend">https://leafmap.org/notebooks/59_create_legend</a></p></li>
 <li><p><a class="reference external" href="https://leafmap.org/notebooks/19_map_to_html">https://leafmap.org/notebooks/19_map_to_html</a></p></li>
+<li><p><a class="reference external" href="https://leafmap.org/notebooks/17_vector_tile_layer">https://leafmap.org/notebooks/17_vector_tile_layer</a></p></li>
 </ul>
 </section>
 </section>
@@ -563,8 +649,27 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">2.1. Introduction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">2.2. Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">2.3. References</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-vector-data">2.2. Visualizing vector data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geojson">2.2.1. GeoJSON</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shapefile">2.2.2. Shapefile</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geopackage">2.2.3. GeoPackage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geodataframe">2.2.4. GeoDataFrame</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-tile-layer">2.2.5. Vector tile layer</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-raster-data">2.3. Visualizing raster data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geotiff">2.3.1. GeoTIFF</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cog">2.3.2. COG</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stac">2.3.3. STAC</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legends">2.4. Legends</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#colorbars">2.5. Colorbars</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#labels">2.6. Labels</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#split-maps">2.7. Split maps</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linked-maps">2.8. Linked maps</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">2.9. Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">2.10. References</a></li>
 </ul>
   </nav></div>
 

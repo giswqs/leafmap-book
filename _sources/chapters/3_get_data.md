@@ -20,12 +20,37 @@ kernelspec:
 
 ## Introduction
 
+## Basemaps
+
+## Census data
+
+## The National Map
+
+## OpenStreetMap
+
+## OpenAerialMap
+
+## Creating vector data
+
+## Editing vector data
+
+## Creating raster data
+
+### From GeoTIFF
+
+### From NumPy array
+
+## Planetary Computer
+
+## AWS Open Data
+
+## Custom STAC catalog
+
 ## Summary
 
 ## References
 
 - https://leafmap.org/notebooks/15_openstreetmap
-- https://leafmap.org/notebooks/17_vector_tile_layer
 - https://leafmap.org/notebooks/18_point_layer
 - https://leafmap.org/notebooks/30_census_data
 - https://leafmap.org/notebooks/31_search_basemaps
