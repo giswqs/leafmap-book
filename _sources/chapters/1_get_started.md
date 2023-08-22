@@ -15,7 +15,7 @@ kernelspec:
 
 ## Introduction
 
-Welcome to the world of geospatial data science! In this chapter, we will introduce the [leafmap](https://leafmap.org) Python package for interactive geospatial data visualization and analysis. We will demonstrate how to use it to create interactive maps using different mapping backends and change basemaps interactively. We will also show you how to use leafmap with various cloud-computing platforms, including Google Colab, Amazon SageMaker Studio Lab, and Microsoft Planetary Computer.
+Welcome to the world of geospatial data science! In this chapter, we will introduce the [leafmap](https://leafmap.org) Python package for interactive visualization and analysis of geospatial data. We will demonstrate how to use it to create interactive maps using different mapping backends and change basemaps interactively. We will also show you how to use leafmap with various cloud-computing platforms, including Google Colab, Amazon SageMaker Studio Lab, and Microsoft Planetary Computer.
 
 ## Geospatial data science
 
@@ -132,6 +132,8 @@ import leafmap
 m = leafmap.Map()
 m
 ```
+
+## Mapping backends
 
 ## Summary
 
