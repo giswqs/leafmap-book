@@ -13,6 +13,11 @@ kernelspec:
 
 # Deep Learning Applications
 
+```{contents}
+:local:
+:depth: 2
+```
+
 ## Introduction
 
 ## Summary
