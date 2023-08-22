@@ -261,11 +261,11 @@ len(leafmap.basemaps)
 ### XYZ tiles
 
 ```{code-cell} ipython3
-m = leafmap.Map()
+m = leafmap.Map(center=[40, -100], zoom=4)
 m.add_tile_layer(
-    url="https://mt1.google.com/vt/lyrs=p&x={x}&y={y}&z={z}",
-    name="Google Terrain",
-    attribution="Google",
+    url="https://a.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
+    name="OpenStreetMap.HOT",
+    attribution="OpenStreetMap",
 )
 m
 ```
@@ -273,14 +273,14 @@ m
 ### WMS tiles
 
 ```{code-cell} ipython3
-m = leafmap.Map(center=[40, -100], zoom=4)
-url = 'https://www.mrlc.gov/geoserver/mrlc_display/NLCD_2019_Land_Cover_L48/wms?'
+m = leafmap.Map(center=[40, -100], zoom=4, height='500px')
+url = 'https://imagery.nationalmap.gov/arcgis/services/USGSNAIPPlus/ImageServer/WMSServer?'
 m.add_wms_layer(
     url=url,
-    layers='NLCD_2019_Land_Cover_L48',
-    name='NLCD 2019',
+    layers='USGSNAIPPlus:NaturalColor',
+    name='NAIP',
     format='image/png',
-    attribution='MRLC',
+    attribution='USGS',
     transparent=True,
 )
 m
@@ -288,12 +288,3 @@ m
 
 ## Summary
 
-## References
-
-- https://leafmap.org/notebooks/01_leafmap_intro
-- https://leafmap.org/notebooks/02_using_basemaps
-- https://leafmap.org/notebooks/26_kepler_gl
-- https://leafmap.org/notebooks/65_sagemaker
-- https://leafmap.org/notebooks/26_kepler_gl
-- https://leafmap.org/notebooks/29_pydeck
-- https://leafmap.org/notebooks/58_bokeh

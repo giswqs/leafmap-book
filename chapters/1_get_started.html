@@ -479,7 +479,6 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">1.12. Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">1.13. References</a></li>
 </ul>
             </nav>
         </div>
@@ -530,7 +529,6 @@ document.write(`
 </ul>
 </li>
 <li><p><a class="reference internal" href="#summary" id="id26">Summary</a></p></li>
-<li><p><a class="reference internal" href="#references" id="id27">References</a></p></li>
 </ul>
 </nav>
 <section id="introduction">
@@ -869,11 +867,11 @@ pip<span class="w"> </span>install<span class="w"> </span>.
 <h3><a class="toc-backref" href="#id24" role="doc-backlink"><span class="section-number">1.11.2. </span>XYZ tiles</a><a class="headerlink" href="#xyz-tiles" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">leafmap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">leafmap</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">center</span><span class="o">=</span><span class="p">[</span><span class="mi">40</span><span class="p">,</span> <span class="o">-</span><span class="mi">100</span><span class="p">],</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 <span class="n">m</span><span class="o">.</span><span class="n">add_tile_layer</span><span class="p">(</span>
-    <span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://mt1.google.com/vt/lyrs=p&amp;x=</span><span class="si">{x}</span><span class="s2">&amp;y=</span><span class="si">{y}</span><span class="s2">&amp;z=</span><span class="si">{z}</span><span class="s2">&quot;</span><span class="p">,</span>
-    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Google Terrain&quot;</span><span class="p">,</span>
-    <span class="n">attribution</span><span class="o">=</span><span class="s2">&quot;Google&quot;</span><span class="p">,</span>
+    <span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://a.tile.openstreetmap.fr/hot/</span><span class="si">{z}</span><span class="s2">/</span><span class="si">{x}</span><span class="s2">/</span><span class="si">{y}</span><span class="s2">.png&quot;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;OpenStreetMap.HOT&quot;</span><span class="p">,</span>
+    <span class="n">attribution</span><span class="o">=</span><span class="s2">&quot;OpenStreetMap&quot;</span><span class="p">,</span>
 <span class="p">)</span>
 <span class="n">m</span>
 </pre></div>
@@ -885,14 +883,14 @@ pip<span class="w"> </span>install<span class="w"> </span>.
 <h3><a class="toc-backref" href="#id25" role="doc-backlink"><span class="section-number">1.11.3. </span>WMS tiles</a><a class="headerlink" href="#wms-tiles" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">leafmap</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">center</span><span class="o">=</span><span class="p">[</span><span class="mi">40</span><span class="p">,</span> <span class="o">-</span><span class="mi">100</span><span class="p">],</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://www.mrlc.gov/geoserver/mrlc_display/NLCD_2019_Land_Cover_L48/wms?&#39;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">leafmap</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">center</span><span class="o">=</span><span class="p">[</span><span class="mi">40</span><span class="p">,</span> <span class="o">-</span><span class="mi">100</span><span class="p">],</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;500px&#39;</span><span class="p">)</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://imagery.nationalmap.gov/arcgis/services/USGSNAIPPlus/ImageServer/WMSServer?&#39;</span>
 <span class="n">m</span><span class="o">.</span><span class="n">add_wms_layer</span><span class="p">(</span>
     <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span>
-    <span class="n">layers</span><span class="o">=</span><span class="s1">&#39;NLCD_2019_Land_Cover_L48&#39;</span><span class="p">,</span>
-    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;NLCD 2019&#39;</span><span class="p">,</span>
+    <span class="n">layers</span><span class="o">=</span><span class="s1">&#39;USGSNAIPPlus:NaturalColor&#39;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;NAIP&#39;</span><span class="p">,</span>
     <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;image/png&#39;</span><span class="p">,</span>
-    <span class="n">attribution</span><span class="o">=</span><span class="s1">&#39;MRLC&#39;</span><span class="p">,</span>
+    <span class="n">attribution</span><span class="o">=</span><span class="s1">&#39;USGS&#39;</span><span class="p">,</span>
     <span class="n">transparent</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 <span class="p">)</span>
 <span class="n">m</span>
@@ -904,18 +902,6 @@ pip<span class="w"> </span>install<span class="w"> </span>.
 </section>
 <section id="summary">
 <h2><a class="toc-backref" href="#id26" role="doc-backlink"><span class="section-number">1.12. </span>Summary</a><a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="references">
-<h2><a class="toc-backref" href="#id27" role="doc-backlink"><span class="section-number">1.13. </span>References</a><a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://leafmap.org/notebooks/01_leafmap_intro">https://leafmap.org/notebooks/01_leafmap_intro</a></p></li>
-<li><p><a class="reference external" href="https://leafmap.org/notebooks/02_using_basemaps">https://leafmap.org/notebooks/02_using_basemaps</a></p></li>
-<li><p><a class="reference external" href="https://leafmap.org/notebooks/26_kepler_gl">https://leafmap.org/notebooks/26_kepler_gl</a></p></li>
-<li><p><a class="reference external" href="https://leafmap.org/notebooks/65_sagemaker">https://leafmap.org/notebooks/65_sagemaker</a></p></li>
-<li><p><a class="reference external" href="https://leafmap.org/notebooks/26_kepler_gl">https://leafmap.org/notebooks/26_kepler_gl</a></p></li>
-<li><p><a class="reference external" href="https://leafmap.org/notebooks/29_pydeck">https://leafmap.org/notebooks/29_pydeck</a></p></li>
-<li><p><a class="reference external" href="https://leafmap.org/notebooks/58_bokeh">https://leafmap.org/notebooks/58_bokeh</a></p></li>
-</ul>
 </section>
 </section>
 
@@ -1018,7 +1004,6 @@ pip<span class="w"> </span>install<span class="w"> </span>.
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">1.12. Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">1.13. References</a></li>
 </ul>
   </nav></div>
 
