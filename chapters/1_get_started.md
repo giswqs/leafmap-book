@@ -75,7 +75,7 @@ leafmap.update_package()
 docker run -it -p 8888:8888 giswqs/leafmap:latest
 ```
 
-## Creating a Jupyter notebook
+## JupyterLab
 
 ```bash
 conda activate geo
@@ -85,20 +85,51 @@ conda activate geo
 jupyter lab
 ```
 
+```{code-cell} ipython3
+import leafmap
+
+m = leafmap.Map()
+m
+```
+
 ## Google Colab
 
 ```{code-cell} ipython3
-import leafmap
+%pip install leafmap
 ```
 
 ```{code-cell} ipython3
+import leafmap
+
 m = leafmap.Map()
 m
 ```
 
 ## Amazon SageMaker Studio Lab
 
+```bash
+!conda install -c conda-forge leafmap -y
+```
+
+```{code-cell} ipython3
+import leafmap
+
+m = leafmap.Map()
+m
+```
+
 ## Microsoft Planetary Computer
+
+```bash
+!mamba update -c conda-forge leafmap -y
+```
+
+```{code-cell} ipython3
+import leafmap
+
+m = leafmap.Map()
+m
+```
 
 ## Summary
 
