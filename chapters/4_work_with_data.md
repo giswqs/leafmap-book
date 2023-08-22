@@ -20,6 +20,22 @@ kernelspec:
 
 ## Introduction
 
+## CSV to points
+
+## Split raster
+
+## Merge raster
+
+## Raster inspector
+
+## Image comparison
+
+## Image overlay
+
+## Heat maps
+
+## Choropleth maps
+
 ## Summary
 
 ## References

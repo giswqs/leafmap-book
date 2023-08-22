@@ -20,6 +20,16 @@ kernelspec:
 
 ## Introduction
 
+## Zonal statistics
+
+## Using ArcGIS Pro
+
+## Using WhiteboxTools
+
+## Hydrological analysis
+
+## LiDAR data analysis
+
 ## Summary
 
 ## References

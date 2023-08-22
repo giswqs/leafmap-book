@@ -20,6 +20,36 @@ kernelspec:
 
 ## Introduction
 
+## Visualizing vector data
+
+### GeoJSON
+
+### Shapefile
+
+### GeoPackage
+
+### GeoDataFrame
+
+### Vector tile layer
+
+## Visualizing raster data
+
+### GeoTIFF
+
+### COG
+
+### STAC
+
+## Legends
+
+## Colorbars
+
+## Labels
+
+## Split maps
+
+## Linked maps
+
 ## Summary
 
 ## References
@@ -36,3 +66,4 @@ kernelspec:
 - https://leafmap.org/notebooks/36_add_labels
 - https://leafmap.org/notebooks/59_create_legend
 - https://leafmap.org/notebooks/19_map_to_html
+- https://leafmap.org/notebooks/17_vector_tile_layer
