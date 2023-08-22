@@ -86,7 +86,7 @@ We welcome feedback from our readers.
 
 I would like to express my sincere gratitude to the individuals and organizations who have contributed to the creation of this book. In particular, I am indebted to my manager, Wenming Ye, at Amazon, where I served as a Visiting Academic. Their unwavering support and the environment they provided have been instrumental in shaping this work.
 
-I would also like to extend my appreciation to the reviewers who dedicated their time and expertise to provide valuable feedback on this book. Your insights and suggestions have not only improved the quality of my work but have also made it more accessible to readers. Your contributions are deeply appreciated.
+I would also like to extend my appreciation to the reviewers who dedicated their time and expertise to provide valuable feedback on this book. Your insights and suggestions have not only improved the quality of my work but have also made it more accessible to readers. Your contributions are deeply appreciated. A special thank you goes to Khalil Misbah for designing the [leafmap logo](https://github.com/opengeos/leafmap/tree/master/docs/assets).
 
 Furthermore, I want to acknowledge the efforts of my editor and publishing team. Their dedication and hard work have been crucial in bringing this book to fruition. Their support and guidance throughout the process have been invaluable, and I am grateful for their expertise and commitment.
 
