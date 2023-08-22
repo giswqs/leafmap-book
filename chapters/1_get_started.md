@@ -4,7 +4,7 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.13
-    jupytext_version: 1.11.5
+    jupytext_version: 1.14.5
 kernelspec:
   display_name: Python 3
   language: python
@@ -134,6 +134,152 @@ m
 ```
 
 ## Mapping backends
+
+```bash
+mamba install -c conda-forge pygis
+```
+
+### Ipyleaflet
+
+```{code-cell} ipython3
+import leafmap
+```
+
+```{code-cell} ipython3
+m = leafmap.Map(center=[37.75, -122.43], zoom=12, height='550px')
+m
+```
+
+```{code-cell} ipython3
+m = leafmap.Map(toolbar_control=False, draw_control=False)
+m
+```
+
+```{code-cell} ipython3
+m.clear_controls()
+m
+```
+
+```{code-cell} ipython3
+m.to_html("map.html", title="My Map", width="100%", height="800px")
+```
+
+### Folium
+
+```{code-cell} ipython3
+import leafmap.foliumap as leafmap
+```
+
+```{code-cell} ipython3
+m = leafmap.Map(center=[37.75, -122.43], zoom=12, height='500px')
+m
+```
+
+```{code-cell} ipython3
+m.to_html('folium.html')
+```
+
+### Bokeh
+
+```{code-cell} ipython3
+import leafmap.bokehmap as leafmap
+```
+
+```{code-cell} ipython3
+m = leafmap.Map(center=[40, -100], zoom=4, height=400)
+m
+```
+
+### Plotly
+
+```{code-cell} ipython3
+import leafmap.plotlymap as leafmap
+```
+
+```{code-cell} ipython3
+m = leafmap.Map(center=[20, 0], zoom=1, height=400)
+m
+```
+
+```{code-cell} ipython3
+# leafmap.fix_widget_error()
+```
+
+### Pydeck
+
+```{code-cell} ipython3
+import leafmap.deck as leafmap
+```
+
+```{code-cell} ipython3
+m = leafmap.Map(center=[20, 0], zoom=1)
+m
+```
+
+### KeplerGL
+
+```{code-cell} ipython3
+import leafmap.kepler as leafmap
+```
+
+```{code-cell} ipython3
+m = leafmap.Map(center=[20, 0], zoom=1)
+m
+```
+
+## Adding basemaps
+
+### Built-in basemaps
+
+```{code-cell} ipython3
+import leafmap
+```
+
+```{code-cell} ipython3
+m = leafmap.Map(basemap='OpenTopoMap')
+m
+```
+
+```{code-cell} ipython3
+m.add_basemap('Stamen.Terrain')
+```
+
+```{code-cell} ipython3
+for basemap in leafmap.basemaps.keys():
+    print(basemap)
+```
+
+```{code-cell} ipython3
+len(leafmap.basemaps)
+```
+
+### XYZ tiles
+
+```{code-cell} ipython3
+m = leafmap.Map()
+m.add_tile_layer(
+    url="https://mt1.google.com/vt/lyrs=p&x={x}&y={y}&z={z}",
+    name="Google Terrain",
+    attribution="Google",
+)
+m
+```
+
+### WMS tiles
+
+```{code-cell} ipython3
+m = leafmap.Map(center=[40, -100], zoom=4)
+url = 'https://www.mrlc.gov/geoserver/mrlc_display/NLCD_2019_Land_Cover_L48/wms?'
+m.add_wms_layer(
+    url=url,
+    layers='NLCD_2019_Land_Cover_L48',
+    name='NLCD 2019',
+    format='image/png',
+    attribution='MRLC',
+    transparent=True,
+)
+m
+```
 
 ## Summary
 
