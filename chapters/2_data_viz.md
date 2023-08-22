@@ -13,8 +13,12 @@ kernelspec:
 
 # Basic Map Visualization
 
-## Introduction
+```{contents}
+:local:
+:depth: 2
+```
 
+## Introduction
 
 ## Summary
 

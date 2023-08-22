@@ -13,6 +13,11 @@ kernelspec:
 
 # Geospatial Data Analysis
 
+```{contents}
+:local:
+:depth: 2
+```
+
 ## Introduction
 
 ## Summary

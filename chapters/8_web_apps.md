@@ -13,6 +13,11 @@ kernelspec:
 
 # Building Interactive Web Apps
 
+```{contents}
+:local:
+:depth: 2
+```
+
 ## Introduction
 
 ## Summary

@@ -13,6 +13,11 @@ kernelspec:
 
 # Time Series Visualization
 
+```{contents}
+:local:
+:depth: 2
+```
+
 ## Introduction
 
 ## Summary

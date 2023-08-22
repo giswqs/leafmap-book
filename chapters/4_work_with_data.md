@@ -13,6 +13,11 @@ kernelspec:
 
 # Working with Geospatial Data
 
+```{contents}
+:local:
+:depth: 2
+```
+
 ## Introduction
 
 ## Summary
