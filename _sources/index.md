@@ -16,4 +16,4 @@ Whether you’re a seasoned data scientist looking to extend your skills into th
 
 ## Demos
 
-![](https://i.imgur.com/DXQN4K9.png)
+![demo](https://images.leafmap.org/demo.png)
