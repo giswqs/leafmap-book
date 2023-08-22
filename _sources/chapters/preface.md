@@ -84,8 +84,14 @@ We welcome feedback from our readers.
 
 ## Acknowledgments
 
-I would like to express my sincere gratitude to the reviewers who provided valuable feedback on this book. Your insights and suggestions helped me to improve the quality of my work and make it more accessible to readers. Your time and effort are greatly appreciated.
+I would like to express my sincere gratitude to the individuals and organizations who have contributed to the creation of this book. In particular, I am indebted to my manager, Wenming Ye, at Amazon, where I served as a Visiting Academic. Their unwavering support and the environment they provided have been instrumental in shaping this work.
 
-I also want to acknowledge the efforts of my editor and publishing team, who worked tirelessly to bring this book to fruition. Your support and guidance throughout the process were invaluable, and I could not have done it without you.
+I would also like to extend my appreciation to the reviewers who dedicated their time and expertise to provide valuable feedback on this book. Your insights and suggestions have not only improved the quality of my work but have also made it more accessible to readers. Your contributions are deeply appreciated.
 
-Finally, I would like to thank my family and friends for their unwavering support and encouragement. Your love and belief in me kept me going during the challenging times, and I am forever grateful.
+Furthermore, I want to acknowledge the efforts of my editor and publishing team. Their dedication and hard work have been crucial in bringing this book to fruition. Their support and guidance throughout the process have been invaluable, and I am grateful for their expertise and commitment.
+
+Lastly, I would like to express my heartfelt thanks to my family and friends. Your unwavering support and encouragement have been a constant source of strength throughout this endeavor. Your love and belief in me have kept me motivated during the challenging times, and I am forever grateful for your presence in my life.
+
+To all those who have played a role, big or small, in the development of this book, I extend my deepest appreciation. Your contributions have made a significant impact, and I am honored to have had the opportunity to collaborate with such remarkable individuals.
+
+Thank you.
