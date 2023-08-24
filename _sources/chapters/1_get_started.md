@@ -286,5 +286,7 @@ m.add_wms_layer(
 m
 ```
 
+### Basemap selector
+
 ## Summary
 

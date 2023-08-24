@@ -22,6 +22,10 @@ kernelspec:
 
 ## Visualizing vector data
 
+```{code-cell} ipython3
+import leafmap
+```
+
 ### GeoJSON
 
 ### Shapefile
