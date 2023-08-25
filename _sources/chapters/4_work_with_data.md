@@ -20,6 +20,12 @@ kernelspec:
 
 ## Introduction
 
+## Technical requirements
+
+```{code-cell} ipython3
+
+```
+
 ## CSV to points
 
 ## Split raster

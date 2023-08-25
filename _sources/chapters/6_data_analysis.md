@@ -20,6 +20,12 @@ kernelspec:
 
 ## Introduction
 
+## Technical requirements
+
+```{code-cell} ipython3
+
+```
+
 ## Zonal statistics
 
 ## Using ArcGIS Pro
