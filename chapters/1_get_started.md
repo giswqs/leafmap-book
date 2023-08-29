@@ -28,7 +28,7 @@ Welcome to the world of geospatial data science! In this chapter, we will introd
 
 ## Key features
 
-## Installation
+## Installing leafmap
 
 ### Installing with conda
 
