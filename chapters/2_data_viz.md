@@ -124,9 +124,6 @@ m
 
 ```{code-cell} ipython3
 states = "https://open.gishub.org/data/us/us_states.zip"
-```
-
-```{code-cell} ipython3
 m = leafmap.Map(center=[40, -100], zoom=4)
 m.add_shp(states, layer_name="US States")
 m
@@ -136,9 +133,6 @@ m
 
 ```{code-cell} ipython3
 import geopandas as gpd
-```
-
-```{code-cell} ipython3
 gdf = gpd.read_file(states)
 gdf.head()
 ```
@@ -153,9 +147,6 @@ m
 
 ```{code-cell} ipython3
 regions = "https://open.gishub.org/data/us/us_regions.gpkg"
-```
-
-```{code-cell} ipython3
 m = leafmap.Map(center=[40, -100], zoom=4)
 m.add_vector(regions, layer_name="US Regions")
 m
