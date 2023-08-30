@@ -67,9 +67,6 @@ import leafmap
 
 ```{code-cell} ipython3
 cities = 'https://open.gishub.org/data/us/cities.geojson'
-```
-
-```{code-cell} ipython3
 m = leafmap.Map(center=[40, -100], zoom=4)
 m.add_geojson(cities, layer_name='Cities')
 m
@@ -85,9 +82,6 @@ m
 
 ```{code-cell} ipython3
 cables = 'https://open.gishub.org/data/vector/cables.geojson'
-```
-
-```{code-cell} ipython3
 m = leafmap.Map(center=[0, 0], zoom=2)
 m.add_geojson(cables, layer_name="Submarine Cables", zoom_to_layer=False)
 m
@@ -105,9 +99,6 @@ m
 
 ```{code-cell} ipython3
 countries = "https://open.gishub.org/data/world/countries.geojson"
-```
-
-```{code-cell} ipython3
 m = leafmap.Map(center=[0, 0], zoom=2)
 m.add_geojson(countries, layer_name="Countries")
 m
